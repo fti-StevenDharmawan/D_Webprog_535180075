@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Java Script DataType</title>
+
+    <script>
+        function changeContent(id,num){
+            var x;
+            x = 3;
+            var res = num + x;
+            document.getElementById(id).innerHTML = "3 + " + num + " = " + res;
+            document.getElementById(id).innerHTML = "3 + " + num + " = " + num + 3;
+        }
+    </script>
+</head>
+
+<body>
+    <button type="button" onclick='changeContent("cLine1",500)'>Go</button>
+
+    <p id="cLine1">Lorem ipsum dolor adipiscing elit. Morbi vulputate eget quam sit amet blandit.</p>
+
+</body>
+</html>

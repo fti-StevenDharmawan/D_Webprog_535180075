@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Java Script Introduction</title>
+
+    <style>
+        .MakeRed{
+            color: red;
+        }
+        .Hide{
+            visibility: hidden;
+        }
+        .Show{
+            visibility: visible;
+        }
+    </style>
+
+    <script>
+        function changeLine2(){
+
+        }
+        function changeLine1Style(){
+            document.getElementById("cLine1").className="MakeRed";
+        }
+        function changeStyle(id,className){
+            document.getElementById(id).className=className;
+        }
+    </script>
+</head>
+
+<body>
+    <button type="button" onclick='changeLine1Style()'>Go</button>
+
+    <p id="cLine1">Lorem ipsum dolor adipiscing elit. Morbi vulputate eget quam sit amet blandit.</p>
+    <br/>
+
+    <button type="button" onclick='changeStyle("cLine2","Hide")'>Hide This</button>
+    <button type="button" onclick='changeStyle("cLine2","Show")'>Show This</button>
+
+    <p id="cLine2">Lorem ipsum dolor adipiscing elit. Morbi vulputate eget quam sit amet blandit.</p>
+    <p>Lorem ipsum dolor adipiscing elit. Morbi vulputate eget quam sit amet blandit.</p>
+</body>
+</html>
